@@ -11,7 +11,7 @@
 #define JP_PIPE         LS(0x89)          // |
 #define JP_AT           LEFT_BRACKET      // @
 #define JP_COLON        SINGLE_QUOTE      // :
-#define JP_ASTERISK     DOUBLE_QUOTES     // *
+#define JP_ASTERISK     DOUBLE_QUOTES     // *a
 #define JP_BACKQUOTE    LEFT_BRACE        // `
 #define JP_UNDERSCORE   LS(0x87)          // _
 #define JP_LBRACKET     RIGHT_BRACKET     // [
@@ -106,10 +106,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp L         &kp U         &kp COMMA                  &kp PERIOD                                                   &kp F        &kp W  &kp R  &kp Y  &kp P
-&kp E      &kp I         &kp A         &kp O                      &kp MINUS       &kp ESC                     &kp TILDE        &kp K        &kp T  &kp N  &kp S  &lt 4 H
-&kp Z      &kp X         &kp C         &kp V                      &kp UNDERSCORE  &lt 3 TAB                   &kp DEL          &kp G        &kp D  &kp M  &kp J  &kp B
-&kp GRAVE  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT INT_HENKAN  &lt 2 SPACE     &mt LCTRL INT_MUHENKAN      &lt 1 BACKSPACE  &lt 5 ENTER                       &kp LG(LS(S))
+&kp Q          &kp L         &kp U         &kp COMMA                  &kp PERIOD                                                       &kp F        &kp W  &kp R  &kp Y  &kp P
+&kp E          &kp I         &kp A         &kp O                      &kp MINUS          &kp ESC                     &kp JP_TILDE      &kp K        &kp T  &kp N  &kp S  &lt 4 H
+&kp Z          &kp X         &kp C         &kp V                      &kp JP_UNDERSCORE  &lt 3 TAB                   &kp LG(LS(S))DEL  &kp G        &kp D  &kp M  &kp J  &kp B
+&kp JP_HANZEN  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT INT_HENKAN  &lt 2 SPACE        &mt LCTRL INT_MUHENKAN      &lt 1 BACKSPACE   &lt 5 ENTER                       &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -117,19 +117,19 @@
 
         FUNCTION {
             bindings = <
-&kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp CARET          &kp AMPERSAND     &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp QUESTION     &trans  &trans    &trans      &trans       &trans      &trans  &kp RIGHT_BRACKET  &kp BACKSLASH     &kp SLASH      &kp BACKSLASH         &kp COLON
-&trans           &trans  &trans    &kp GRAVE   &kp PIPE     &trans      &trans  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN      &kp SEMICOLON
-&trans           &trans  &trans    &trans      &trans       &trans      &trans  &trans                                                                    &trans
+&kp EXCLAMATION  &kp JP_AT  &kp HASH  &kp DOLLAR        &kp PERCENT                      &kp JP_CARET       &kp JP_AMPERSAND  &kp JP_ASTERISK   &kp JP_LPAREN      &kp JP_RPAREN
+&kp QUESTION     &trans     &trans    &kp JP_YEN        &trans       &trans      &trans  &kp JP_LBRACKET    &kp JP_RBRACKET   &kp SLASH         &kp BACKSLASH      &kp JP_COLON
+&trans           &trans     &trans    &kp JP_BACKQUOTE  &kp JP_PIPE  &trans      &trans  &kp JP_DQUOTE      &kp JP_QUOTE      &kp LESS_THAN     &kp GREATER_THAN   &kp SEMICOLON
+&trans           &trans     &trans    &trans            &trans       &trans      &trans  &trans                                                                    &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp LCTRL       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                             &kp ESC  &kp F1  &kp F2   &kp F3   &kp F4
-&kp EQUAL       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans     &kp ENTER         &trans  &trans   &kp F5  &kp F6   &kp F7   &kp F8
-&kp PERCENT     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SLASH  &kp ASTERISK      &trans  &trans   &kp F9  &kp F10  &kp F11  &kp F12
-&kp KP_NUMLOCK  &kp KP_NUMBER_0  &kp KP_DOT       &trans           &trans     &trans            &trans  &trans                             &trans
+&kp LCTRL       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp JP_PLUS                           &kp ESC  &kp F1  &kp F2   &kp F3   &kp F4
+&kp JP_EQUAL    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans      &kp ENTER         &trans  &trans   &kp F5  &kp F6   &kp F7   &kp F8
+&kp PERCENT     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SLASH   &kp JP_ASTERISK   &trans  &trans   &kp F9  &kp F10  &kp F11  &kp F12
+&kp KP_NUMLOCK  &kp KP_NUMBER_0  &kp KP_DOT       &trans           &trans      &trans            &trans  &trans                             &trans
             >;
         };
 

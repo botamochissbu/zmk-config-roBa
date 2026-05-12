@@ -109,7 +109,7 @@
 &kp Q          &kp L         &kp U         &kp COMMA                  &kp PERIOD                                                      &kp F        &kp W  &kp R  &kp Y  &kp P
 &kp E          &kp I         &kp A         &kp O                      &kp MINUS          &kp ESC                     &kp JP_TILDE     &kp K        &kp T  &kp N  &kp S  &lt 5 H
 &kp Z          &kp X         &kp C         &kp V                      &kp JP_UNDERSCORE  &lt 3 TAB                   &kp LG(LS(S))    &kp G        &kp D  &kp M  &kp J  &kp B
-&kp JP_HANZEN  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT INT_HENKAN  &lt 2 SPACE        &mt LCTRL INT_MUHENKAN      &lt 1 BACKSPACE  &lt 3 ENTER                       &kp DELETE
+&kp JP_HANZEN  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT INT_HENKAN  &lt 2 SPACE        &mt LCTRL INT_MUHENKAN      &lt 1 BACKSPACE  &lt 2 ENTER                       &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;

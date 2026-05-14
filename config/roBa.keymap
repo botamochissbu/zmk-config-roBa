@@ -106,10 +106,10 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp L         &kp U         &kp COMMA             &kp PERIOD                                             &kp F        &kp W  &kp R  &kp Y  &kp P
-&kp E       &kp I         &kp A         &kp O                 &kp MINUS          &kp ESC            &kp JP_TILDE     &kp K        &kp T  &kp N  &kp S  &lt 5 H
-&kp Z       &kp X         &kp C         &kp V                 &kp JP_UNDERSCORE  &lt 3 TAB          &kp LG(LS(S))    &kp G        &kp D  &kp M  &kp J  &kp B
-&kp K_UNDO  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GRAVE  &lt 2 SPACE        &mt LCTRL DEL      &lt 1 BACKSPACE  &lt 3 ENTER                       &kp LS(CAPSLOCK)
+&kp Q       &kp L         &kp U         &kp COMMA             &kp PERIOD                                                 &kp F        &kp W  &kp R  &kp Y  &kp P
+&kp E       &kp I         &kp A         &kp O                 &kp MINUS          &kp ESC            &kp JP_TILDE         &kp K        &kp T  &kp N  &kp S  &lt 5 H
+&kp Z       &kp X         &kp C         &kp V                 &kp JP_UNDERSCORE  &lt 3 TAB          &lt 3 INT_MUHENKAN   &kp G        &kp D  &kp M  &kp J  &kp B
+&kp LC(Z)   &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GRAVE  &lt 2 SPACE        &mt LCTRL DEL      &lt 1 BACKSPACE      &mt LCTRL ENTER                   &mt LG(LS(S)) LS(CAPSLOCK)
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;

@@ -13,7 +13,6 @@
 #define JP_COLON        SINGLE_QUOTE      // :
 #define JP_ASTERISK     DOUBLE_QUOTES     // *a
 #define JP_BACKQUOTE    LEFT_BRACE        // `
-#define JP_BACKSLASH    0x87              // \
 #define JP_UNDERSCORE   LS(0x87)          // _
 #define JP_LBRACKET     RIGHT_BRACKET     // [
 #define JP_RBRACKET     BACKSLASH         // ]
@@ -119,7 +118,7 @@
         FUNCTION {
             bindings = <
 &kp EXCLAMATION  &kp JP_AT  &kp HASH  &kp DOLLAR        &kp PERCENT                      &kp JP_CARET     &kp JP_AMPERSAND  &kp JP_ASTERISK  &kp JP_LPAREN      &kp JP_RPAREN
-&kp QUESTION     &trans     &trans    &kp JP_YEN        &trans       &trans      &trans  &kp JP_LBRACKET  &kp JP_RBRACKET   &kp SLASH        &kp JP_BACKSLASH   &kp JP_COLON
+&kp QUESTION     &trans     &trans    &kp JP_YEN        &trans       &trans      &trans  &kp JP_LBRACKET  &kp JP_RBRACKET   &kp SLASH        &kp 0x87           &kp JP_COLON
 &trans           &trans     &trans    &kp JP_BACKQUOTE  &kp JP_PIPE  &trans      &trans  &kp JP_DQUOTE    &kp JP_QUOTE      &kp LESS_THAN    &kp GREATER_THAN   &kp SEMICOLON
 &trans           &trans     &trans    &trans            &trans       &trans      &trans  &trans                                                                 &trans
             >;

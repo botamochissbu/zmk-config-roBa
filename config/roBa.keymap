@@ -106,10 +106,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp L         &kp U         &kp COMMA             &kp PERIOD                                                &kp F            &kp W  &kp R  &kp Y  &kp P
-&lt 5 E    &kp I         &kp A         &kp O                 &kp MINUS          &kp ESC            &kp JP_TILDE        &kp K            &kp T  &kp N  &kp S  &lt 5 H
-&kp Z      &kp X         &kp C         &kp V                 &kp JP_UNDERSCORE  &lt 3 TAB          &lt 3 INT_MUHENKAN  &kp G            &kp D  &kp M  &kp J  &kp B
-&kp LC(Z)  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GRAVE  &lt 2 SPACE        &mt LCTRL DEL      &lt 1 BACKSPACE     &mt LCTRL ENTER                       &mt LG(LS(S)) LS(CAPSLOCK)
+&kp Q      &kp L         &kp U         &kp COMMA             &kp PERIOD                                                &kp F            &kp W  &kp R  &lt 5 Y  &kp P
+&lt 5 E    &kp I         &kp A         &kp O                 &kp MINUS          &kp ESC            &kp JP_TILDE        &kp K            &kp T  &kp N  &kp S    &lt 4 H
+&kp Z      &kp X         &kp C         &kp V                 &kp JP_UNDERSCORE  &lt 3 TAB          &lt 3 INT_MUHENKAN  &kp G            &kp D  &kp M  &kp J    &kp B
+&kp LC(F)  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GRAVE  &lt 2 SPACE        &mt LCTRL DEL      &lt 1 BACKSPACE     &mt LCTRL ENTER                         &mt LG(LS(S)) LS(CAPSLOCK)
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -126,7 +126,7 @@
 
         NUM {
             bindings = <
-&kp LCTRL       &kp KP_NUMBER_7  &kp KP_NUMBER_8      &kp KP_NUMBER_9  &kp JP_PLUS                               &kp ESC  &kp F1  &kp F2   &kp F3   &kp F4
+&kp JP_COLON    &kp KP_NUMBER_7  &kp KP_NUMBER_8      &kp KP_NUMBER_9  &kp JP_PLUS                               &kp ESC  &kp F1  &kp F2   &kp F3   &kp F4
 &kp JP_EQUAL    &kp KP_NUMBER_4  &kp KP_NUMBER_5      &kp KP_NUMBER_6  &trans       &kp ENTER            &trans  &trans   &kp F5  &kp F6   &kp F7   &kp F8
 &kp PERCENT     &kp KP_NUMBER_1  &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp SLASH    &kp JP_ASTERISK      &trans  &trans   &kp F9  &kp F10  &kp F11  &kp F12
 &kp KP_NUMLOCK  &kp KP_NUMBER_0  &mt LEFT_ALT KP_DOT  &trans           &trans       &trans               &trans  &trans                             &trans
@@ -137,7 +137,7 @@
             bindings = <
 &kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &kp ESC         &kp LS(LC(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans
 &kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LS(LG(RIGHT_ARROW))  &trans
+&kp LEFT_SHIFT  &kp LG(LEFT_ARROW)      &trans          &kp LG(RIGHT_ARROW)      &trans   &trans      &trans  &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LS(LG(RIGHT_ARROW))  &trans
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                                                           &trans
             >;
 

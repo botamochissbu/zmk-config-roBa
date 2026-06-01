@@ -1,5 +1,7 @@
 // OS設定を日本語キーボードのまま使用するための変換定義
 
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
+
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -117,6 +119,14 @@
 
             #binding-cells = <2>;
         };
+
+        encoder_msc_down_up: encoder_msc_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_DOWN_UP";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc LC(SCRL_DOWN)>, <&msc LC(SCRL_UP)>;
+            tap-ms = <20>;
+        };
     };
 
     keymap {
@@ -130,7 +140,7 @@
 &mt LG(LS(S)) LC(F)  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GRAVE  &lt_hold 2 SPACE    &mt LCTRL DEL      &lt 1 BACKSPACE          &mt LCTRL ENTER                          &mt LG(LS(S)) LS(CAPSLOCK)
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_ZOOM_OUT C_AC_ZOOM_OUT>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         FUNCTION {

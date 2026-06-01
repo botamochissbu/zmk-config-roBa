@@ -130,7 +130,7 @@
 &mt LG(LS(S)) LC(F)  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GRAVE  &lt_hold 2 SPACE    &mt LCTRL DEL      &lt 1 BACKSPACE          &mt LCTRL ENTER                          &mt LG(LS(S)) LS(CAPSLOCK)
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&inc_dec_kp C_AC_ZOOM_OUT C_AC_ZOOM_OUT>;
         };
 
         FUNCTION {

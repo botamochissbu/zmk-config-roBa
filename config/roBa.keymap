@@ -134,10 +134,10 @@
 
         default_layer {
             bindings = <
-&kp Q                &kp L         &kp U         &kp COMMA             &kp PERIOD                                                      &kp F            &kp W  &kp R   &kp Y    &kp P
-&lt 5 E              &kp I         &kp A         &kp O                 &kp MINUS           &kp ESC            &kp JP_TILDE             &kp K            &kp T  &kp N   &kp S    &lt_hold 4 H
-&kp Z                &kp X         &kp C         &kp V                 &kp JP_UNDERSCORE   &lt_hold 3 TAB     &lt_hold 3 INT_MUHENKAN  &kp G            &kp D  &kp M   &kp J    &lt_hold 5 B
-&mt LG(LS(S)) LC(F)  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GRAVE  &lt_hold 2 SPACE    &mt LCTRL DEL      &lt 1 BACKSPACE          &mt LCTRL ENTER                          &mt LG(LS(S)) LS(CAPSLOCK)
+&kp Q                &kp L         &kp U         &kp COMMA             &kp PERIOD                                                      &kp F            &kp W  &kp R   &lt_hold 5 Y    &kp P
+&lt 5 E              &kp I         &kp A         &kp O                 &kp MINUS           &kp ESC            &kp JP_TILDE             &kp K            &kp T  &kp N   &kp S           &lt_hold 4 H
+&kp Z                &kp X         &kp C         &kp V                 &kp JP_UNDERSCORE   &lt_hold 3 TAB     &lt_hold 3 INT_MUHENKAN  &kp G            &kp D  &kp M   &kp J           &kp B
+&mt LG(LS(S)) LC(F)  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT GRAVE  &lt_hold 2 SPACE    &mt LCTRL DEL      &lt 1 BACKSPACE          &mt LCTRL ENTER                                 &mt LG(LS(S)) LS(CAPSLOCK)
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;

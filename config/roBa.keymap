@@ -154,10 +154,10 @@
 
         NUM {
             bindings = <
-&kp JP_COLON    &kp KP_NUMBER_7  &kp KP_NUMBER_8      &kp KP_NUMBER_9  &kp JP_PLUS                               &kp ESC  &kp F1  &kp F2   &kp F3   &kp F4
-&kp JP_EQUAL    &kp KP_NUMBER_4  &kp KP_NUMBER_5      &kp KP_NUMBER_6  &trans       &kp ENTER            &trans  &trans   &kp F5  &kp F6   &kp F7   &kp F8
-&kp PERCENT     &kp KP_NUMBER_1  &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp SLASH    &kp JP_ASTERISK      &trans  &trans   &kp F9  &kp F10  &kp F11  &kp F12
-&kp KP_NUMLOCK  &kp KP_NUMBER_0  &mt LEFT_ALT KP_DOT  &trans           &trans       &trans               &trans  &trans                             &trans
+&kp JP_COLON    &kp KP_NUMBER_7  &kp KP_NUMBER_8        &kp KP_NUMBER_9  &kp JP_PLUS                               &kp ESC  &kp F1  &kp F2   &kp F3   &kp F4
+&kp KP_DOT      &kp KP_NUMBER_4  &kp KP_NUMBER_5        &kp KP_NUMBER_6  &trans       &kp ENTER            &trans  &trans   &kp F5  &kp F6   &kp F7   &kp F8
+&kp KP_NUMBER_0 &kp KP_NUMBER_1  &kp KP_NUMBER_2        &kp KP_NUMBER_3  &kp SLASH    &kp JP_ASTERISK      &trans  &trans   &kp F9  &kp F10  &kp F11  &kp F12
+&kp KP_NUMLOCK  &kp PERCENT      &mt LEFT_ALT JP_EQUAL  &trans           &trans       &trans               &trans  &trans                             &trans
             >;
         };
 
